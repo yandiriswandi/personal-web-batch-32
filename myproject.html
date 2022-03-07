@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>My Project</title>
+   
+    <link rel="stylesheet" href="assets/myproject.css" />
+    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+        <!-- Left -->
+        <div class="left-side">
+            <img src="images/logo.png">
+
+            <ul>
+                <li><a style="font-weight: 500;" href="index.html">Home</a></li>
+                <li><a href="myproject.html">My Project</a></li>
+            </ul>
+        </div>
+
+        <!-- Right -->
+        <div class="right-side">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="container-main">
+        <h1>ADD MY PROJECT</h1>
+        <form class="container-form" onsubmit="addBlog(event)">
+            <div class="container">
+                <div>
+                    <label for="input-myproject-title">Project Name</label>
+                    <input id="input-myproject-title" />
+                    </div>
+                    <div class="date">
+                        <div class="date-left-side">
+                            <label for="birthday">Start Date</label>
+                            <input type="date" id="start-date">
+                        </div>
+                        <div class="date-right-side">
+                            <label for="birthday">End Date</label>
+                            <input type="date" id="end-date">
+                        </div>
+                    </div>
+                    <div>
+                    <label for="input-myproject-content">Description</label>
+                    <textarea id="input-myproject-content"></textarea>
+                    </div>
+            </div>
+            <div>
+                <label for="" >Technologies</label>
+            </div>
+            <div class="checkbox" id="checkbox">
+                
+                <div class="left-checkbox">
+                    <div>
+                       <label for="node js"><input type="checkbox" name="technologies"  value="fa-brands fa-node-js" id="nodejs">
+                        Node Js</label>
+                    </div>
+                    <div>  
+                       <label for="reactjs"> <input type="checkbox" name="technologies"  value="fa-brands fa-react" id="reactjs">
+                        React Js</label>
+                    </div>
+                </div>
+                <div class="right-checkbox">
+                    <div>
+                       <label for="nextjs"><input type="checkbox" name="technologies" value="fa-brands fa-android" id="nextjs">
+                        Next Js</label>
+                    </div>
+                    <div>
+                        <label for="typescript"><input type="checkbox" name="technologies" value="fa-brands fa-java" id="typescript">
+                            Type Script</label>
+                    </div>   
+                </div>
+            </div>
+           
+            <p id="inputTechnologies" hidden></p>
+            <!-- input gambar -->
+            <div>
+                <label>Upload Image</label>
+                <div class="input-blog-image-group">
+                  <label for="input-myproject-image">
+                      <div class="left-file"><p>choose</p></div>
+                      <div style="padding-right: 5px;" class="right-file"><img src="images/file.png" alt="file" style="transform:rotate(50deg);"/></div>
+                  </label>
+                  <input type="file" id="input-myproject-image" hidden />
+                </div>
+            </div>
+            <div class="button-group">
+                <button type="button" onclick="addBlog()" >submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- CONTENT -->
+    <div class="container-content">
+        <div class="content"> 
+            <div>
+                <h1>MY PROJECT</h1>
+            </div>
+            <div class="card-main" id="contents">
+                <div class="card">
+                    <div class="input-images">
+                        <img src="images/coding.jpg" alt="">
+                    </div>
+                    <div style="display: flex; align-items: flex-start;justify-content: flex-start;width: 100%;">
+                    <p style="font-size: 12px;">
+                        <a href="myproject-detail.html" target="_blank" style="font-size: 15px">
+                            <b>Dumbwasy Mobile App-2021</b></a>
+                            <br>durasi: 3 bulan</p>       
+                    </div>
+                    <div style="display: flex; text-align: justify;">
+                        <p style="font-size: 13px">
+                            Node.js adalah platform perangkat lunak yang dirancang oleh Ryan Dahl. Node.js adalah runtime untuk 
+                            lingkungan JavaScript di luar peramban web yang dibangun di atas mesin JavaScript V8.
+                            Node.js dapat dijalankan pada Windows, Mac OS X, dan Linux.
+                        </p>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-brands fa-google-play"></i>
+                        <i class="fa-brands fa-android"></i>
+                        <i class="fa-brands fa-java"></i>
+                    </div>
+                    <div class="btn-group">
+                        <div class="edit">
+                            <a href="#" class="btn-edit">Edit </a>
+                        </div>
+                        <div class="delete">
+                            <a href="#" class="btn-post">Delete</a>
+                        </div> 
+                    </div>
+                </div >
+            </div>
+        </div>
+    <script src="myproject.js"></script>
+  </body>
+</html>

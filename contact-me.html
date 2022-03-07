@@ -1,0 +1,119 @@
+<html>
+<head>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="assets/style.css">
+
+        
+    <title>Personal Data</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="icon" type="image/x-icon" href="">
+
+</head>
+
+<body>
+        <!-- NAVBAR -->
+    <nav>
+        <!-- Left -->
+        <div class="left-side">
+            <img src="images/logo.png">
+
+            <ul>
+                <li><a href="index.html" style="font-weight:490">Home</a></li>
+                <li><a href="myproject.html" style="font-weight:490">My Project</a></li>
+            </ul>
+        </div>
+
+        <!-- Right -->
+        <div class="right-side">
+            <a href="contact-me.html">Contact Me</a>
+        </div>
+    </nav>
+    <!-- AKHIR NAVBAR -->
+    <h1 style="text-align:center; font-weight: bold; margin-top: 40px;">GET IN TOUCH</h1>
+    <form style="width:400px; margin:auto; margin-top:20px">
+        <div style="margin-bottom:20px ">
+            <label for="input-name" style="font-weight: 550;">Name</label>
+            <input type="text" 
+                    id="input-name"
+                    style="
+                            width: 100%;
+                            background-color:white;
+                            border:none;
+                            border-radius: 5px;
+                            padding: 8px;
+                            box-shadow: 0px 2px 10px 2px rgb(170, 169, 169);
+                            height: 30px">
+        </div>
+        <div style="margin-bottom:20px">
+            <label for="input-email" style="font-weight:550">Email</label>
+            <input type="email" 
+                    id="input-email"
+                    style="
+                            width: 100%;
+                            background-color: white;
+                            border:none;
+                            border-radius: 5px;
+                            padding: 8px;
+                            box-shadow: 0px 2px 10px 2px rgb(170, 169, 169);
+                            height: 30px">
+        </div>
+        <div style="margin-bottom:20px">
+            <label for="input-number" style="font-weight:550">Phone Number</label>
+            <input type="number" 
+                    id="input-number"
+                    style="
+                            width: 100%;
+                            background-color: white;
+                            border:none;
+                            border-radius: 5px;
+                            padding: 8px;
+                            box-shadow: 0px 2px 10px 2px rgb(170, 169, 169);
+                            height: 30px">
+        </div>
+        <div style="margin-bottom:20px">
+            <label for="select-subject" style="font-weight:550">Subject</label>
+            <select type="email" 
+                    id="select-subject"
+                    style="
+                            width: 100%;
+                            background-color: white;
+                            border:none;
+                            border-radius: 5px;
+                            padding: 8px;
+                            box-shadow: 0px 2px 10px 2px rgb(170, 169, 169);
+                            height: 35px"
+            >
+                <option></option>    
+                <option style="font-family: poppins;" value="I'm hiring">I'm hiring</option>
+                <option style="font-family: poppins;" value="Let's Colaboration">Let's Colaboration</option>
+                <option style="font-family: poppins;" value="Let's Talk">Let's Talk</option>
+            </select>
+        </div>
+        <div style="margin-bottom:40px">
+            <label for="input-message" style="font-weight:550">Your Message</label>
+            <textarea id="input-message"
+                        style="
+                            width: 100%;
+                            background-color: white;
+                            border:none;
+                            border-radius:5px;
+                            padding: 8px;
+                            box-shadow: 0px 2px 10px 2px rgb(170, 169, 169);
+                            height: 80px;
+                            resize: none"> 
+            </textarea><!--resize digunakan agar area pada textarea tidak dapat diperbesar kecil-->
+        </div>
+        <button style=" background-color:black;
+                        border:none; 
+                        color:white;
+                        font-family: calibri;
+                        border-radius:20px;
+                        padding: 5px 30px;
+                        font-size: medium;
+                        float:right"
+        onclick="submitForm()" type="button">submit</button>
+    </form>
+
+</body>
+
+</html>
