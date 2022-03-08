@@ -29,7 +29,7 @@
     <!-- Form -->
     <div class="container-main">
         <h1>ADD MY PROJECT</h1>
-        <form class="container-form" onsubmit="addBlog(event)">
+        <form class="container-form" onsubmit="addProject(event)">
             <div class="container">
                 <div>
                     <label for="input-myproject-title">Project Name</label>
@@ -54,7 +54,6 @@
                 <label for="" >Technologies</label>
             </div>
             <div class="checkbox" id="checkbox">
-                
                 <div class="left-checkbox">
                     <div>
                        <label for="node js"><input type="checkbox" name="technologies"  value="fa-brands fa-node-js" id="nodejs">
@@ -72,7 +71,7 @@
                     </div>
                     <div>
                         <label for="typescript"><input type="checkbox" name="technologies" value="fa-brands fa-java" id="typescript">
-                            Type Script</label>
+                        Type Script</label>
                     </div>   
                 </div>
             </div>
@@ -89,10 +88,12 @@
                   <input type="file" id="input-myproject-image" hidden />
                 </div>
             </div>
+            <!-- end input gambar -->
             <div class="button-group">
-                <button type="button" onclick="addBlog()" >submit</button>
+                <button type="button" onclick="addProject()" >submit</button>
             </div>
         </form>
+        <!-- end form -->
     </div>
     <!-- CONTENT -->
     <div class="container-content">
@@ -101,6 +102,7 @@
                 <h1>MY PROJECT</h1>
             </div>
             <div class="card-main" id="contents">
+                <!-- card -->
                 <div class="card">
                     <div class="input-images">
                         <img src="images/coding.jpg" alt="">
@@ -132,6 +134,7 @@
                         </div> 
                     </div>
                 </div >
+                <!-- end card -->
             </div>
         </div>
     <script src="myproject.js"></script>

@@ -1,6 +1,6 @@
-let blogs = []//array yang digunakan untuk object
-//deklarasi function ketika button diklik masuk ke function addblog
-function addBlog() {
+let projects = []//array yang digunakan untuk object
+//deklarasi function ketika button diklik masuk ke function addproject
+function addProject() {
 
     //pemanggilan nilai data berdasarkan id
     let title = document.getElementById("input-myproject-title").value;
@@ -26,7 +26,7 @@ function addBlog() {
 
     image = URL.createObjectURL(image)//memanggil url asli pada gambar
     //membungkus nilai yang ada di variable ke object
-    let blog = {
+    let project = {
         title: title,
         start: start,
         end : end,
@@ -42,17 +42,17 @@ function addBlog() {
     console.log(inputTechnologies)
     console.log(image)
 
-    blogs.push(blog)//simpan di array dengan method push
+    projects.push(project)//simpan di array dengan method push
     
-    renderBlog()//pemanggilan function renderBlog
+    renderProject()//pemanggilan function renderproject
 }
 
-function renderBlog() {
+function renderProject() {
     //memanggil atribut berdasarkan id content yang berisi car didalamnya
-    let blogContainer = document.getElementById('contents')
+    let projectContainer = document.getElementById('contents')
 
     //mengatur default tampilan awal
-    blogContainer.innerHTML = `
+    projectContainer.innerHTML = `
     <div class="card">
     <div class="input-images">
         <img src="images/coding.jpg" alt="">
@@ -83,30 +83,30 @@ function renderBlog() {
         </div> 
     </div>
 </div >`
-    // pengulangan array blogs
-    for(let i = 0; i < blogs.length; i++){
-        blogContainer.innerHTML += 
+    // pengulangan array projects
+    for(let i = 0; i < projects.length; i++){
+        projectContainer.innerHTML += 
         
         `<div>
         <div class="card">
         <div class="input-images">
-            <img src="${blogs[i].image}" alt="">
+            <img src="${projects[i].image}" alt="">
         </div>
         <p style="font-size: 12px;">
             <a href="myproject-detail.html" target="_blank" style="font-size: 15px">
-                <b>${blogs[i].title}</b></a>
-                <br>${getDistanceTime(blogs[i].start,blogs[i].end)}</p>
+                <b>${projects[i].title}</b></a>
+                <br>${getDistanceTime(projects[i].start,projects[i].end)}</p>
         <p>
         <p style="font-size: 13px;">
-        ${blogs[i].content}
+        ${projects[i].content}
         
         </p>
     
         <div class="icon">
-           <i class="${blogs[i].inputTechnologies[0]}"></i> 
-           <i class="${blogs[i].inputTechnologies[1]}"></i>
-           <i class="${blogs[i].inputTechnologies[2]}"></i>
-           <i class="${blogs[i].inputTechnologies[3]}"></i>
+           <i class="${projects[i].inputTechnologies[0]}"></i> 
+           <i class="${projects[i].inputTechnologies[1]}"></i>
+           <i class="${projects[i].inputTechnologies[2]}"></i>
+           <i class="${projects[i].inputTechnologies[3]}"></i>
         </div>
         <div class="btn-group">
             <div class="edit">
@@ -126,7 +126,7 @@ function getDistanceTime(start,end) {
    
   
     // console.log('Now: ', timeNow)
-    // console.log('Blog: ', timeBlog)
+    // console.log('project: ', timeproject)
     
     let distance = new Date(end)- new Date(start) // miliseconds
     let monthDistance = Math.floor(distance / (4*7*24 * 60 * 60 * 1000 )) // convert to month
@@ -155,7 +155,7 @@ function getDistanceTime(start,end) {
 // agar bisa update setiap saat atau membuat post setiap saat 
 // biar waktunya update
 setInterval(function(){
-    renderBlog()
+    renderproject()
   }, 1000)
   
   
