@@ -20,7 +20,7 @@ function addProject() {
     // let inputTechnologies = document.getElementById("inputTechnologies").innerText = technologies.replace(/,\s*$/, "");
     // let inputTechnologies=Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map((elem) => elem.value);
     let inputTechnologies = Array.from(document.querySelectorAll('input[type=checkbox]:checked')).map(item=>item.value);
-    //contoh pemanggilan checkbox gambar
+    //contoh pemanggilan checkbox gambar 2
     // let getIcon1 = document.getElementById('node')
     // let getIcon2 = document.getElementById('react')
     // let getIcon3 = document.getElementById('next')
@@ -95,7 +95,7 @@ function renderProject() {
         </div>
         <div class="icon">
             <i class="fa-brands fa-google-play"></i>
-            <i class="fa-brands fa-android"></i>
+            <i class="fa fa-android"></i>
             <i class="fa-brands fa-java"></i>
         </div>
         <div class="btn-group">
