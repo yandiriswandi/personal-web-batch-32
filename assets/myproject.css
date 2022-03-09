@@ -300,9 +300,8 @@ input[type=checkbox]{
     margin-bottom: 30px;
     margin-top: 10px;
 }
-.container-content .content .card-main .card .icon i .fa-google-play{
-    font-size: 500px;
-    color: aqua;
+.container-content .content .card-main .card .icon .fa-google-play{
+    font-size: 30px;
 }
 .card a{
     color: black;
