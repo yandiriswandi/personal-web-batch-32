@@ -32,10 +32,10 @@
             <div class="detail">
                 <h2>Duration</h2>
                 <div style="display: flex; align-items: center;">
-                    <img src="images/calender.png" style="width: 30px; height: 30px;"><p style="margin-left: 20px;">12 jan 2021 - 11 Feb 2021</p> </img>
+                    <img src="images/calender.png" style="width: 30px; height: 30px;"><p style="margin-left: 20px;">12 jan 2021 - 11 juni 2021</p> </img>
                 </div>
                 <div style="display: flex;align-items: center">
-                    <img src="images/jam.png"   style="width: 35px; height: 35px;"><p style="margin-left: 20px;" id="duration">1 month</p> </img>
+                    <img src="images/jam.png"   style="width: 35px; height: 35px;"><p style="margin-left: 20px;" id="duration"></p> </img>
                 </div>
                 <h2>Technologies</h2>
                 <div class="js">
@@ -88,12 +88,13 @@
     </p>
 </div>
 <script>
-    let start = new Date ('12-1-2021 00:00:00')
-    let end = new Date ('11-2-2021 00:00:00')
-     let distance = start- end // miliseconds
+    let start = new Date ('jan 12, 2021 00:00:00').getTime();
+    let end = new Date ('jun 11, 2021 00:00:00').getTime();
+    let distance = end-start // miliseconds
     let monthDistance = Math.floor(distance / (4*7*24 * 60 * 60 * 1000 )) // convert to month
     
     document.getElementById('duration').innerText = monthDistance+' month'
+    console.log(distance)
 </script>
 </body>
 </html>

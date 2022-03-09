@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="assets/myproject.css" />
     
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <!-- NavBar -->
@@ -14,7 +15,7 @@
             <img src="images/logo.png">
 
             <ul>
-                <li><a style="font-weight: 500;" href="index.html">Home</a></li>
+                <li><a style="font-weight: 300;" href="index.html">Home</a></li>
                 <li><a href="myproject.html">My Project</a></li>
             </ul>
         </div>
@@ -25,7 +26,7 @@
         </div>
     </nav>
 
-    <!-- Blog -->
+    <!-- My Project -->
     <!-- Form -->
     <div class="container-main">
         <h1>ADD MY PROJECT</h1>
@@ -53,29 +54,32 @@
             <div>
                 <label for="" >Technologies</label>
             </div>
+            <!-- input checkbox -->
             <div class="checkbox" id="checkbox">
                 <div class="left-checkbox">
                     <div>
-                       <label for="node js"><input type="checkbox" name="technologies"  value="fa-brands fa-node-js" id="nodejs">
+                       <label for="node js"><input class="icheckbox" type="checkbox" name="technologies"  value="fa-brands fa-node-js" id="nodejs">
                         Node Js</label>
                     </div>
                     <div>  
-                       <label for="reactjs"> <input type="checkbox" name="technologies"  value="fa-brands fa-react" id="reactjs">
+                       <label for="reactjs"> <input class="icheckbox" type="checkbox" name="technologies"  value="fa-brands fa-react" id="reactjs">
                         React Js</label>
                     </div>
                 </div>
                 <div class="right-checkbox">
                     <div>
-                       <label for="nextjs"><input type="checkbox" name="technologies" value="fa-brands fa-android" id="nextjs">
-                        Next Js</label>
+                       <label for="nextjs"><input class="icheckbox" type="checkbox" name="technologies" value="fa-brands fa-android" id="nextjs">
+                            Next Js</label>
+                        <!-- <label for="nextjs"><input type="checkbox" name="technologies" value="images/next.png" id="nextjs">
+                            Next Js</label>  -->
                     </div>
                     <div>
-                        <label for="typescript"><input type="checkbox" name="technologies" value="fa-brands fa-java" id="typescript">
+                        <label for="typescript"><input class="icheckbox" type="checkbox" name="technologies" value="fa-brands fa-java" id="typescript">
                         Type Script</label>
                     </div>   
                 </div>
             </div>
-           
+            <!-- end input checkbox-->
             <p id="inputTechnologies" hidden></p>
             <!-- input gambar -->
             <div>
@@ -93,13 +97,13 @@
                 <button type="button" onclick="addProject()" >submit</button>
             </div>
         </form>
-        <!-- end form -->
     </div>
+    <!-- end Form -->
     <!-- CONTENT -->
     <div class="container-content">
         <div class="content"> 
             <div>
-                <h1>MY PROJECT</h1>
+                <h1><b>MY PROJECT</b></h1>
             </div>
             <div class="card-main" id="contents">
                 <!-- card -->
@@ -108,29 +112,30 @@
                         <img src="images/coding.jpg" alt="">
                     </div>
                     <div style="display: flex; align-items: flex-start;justify-content: flex-start;width: 100%;">
-                    <p style="font-size: 12px;">
+                    <p style="font-size: 13px;">
                         <a href="myproject-detail.html" target="_blank" style="font-size: 15px">
                             <b>Dumbwasy Mobile App-2021</b></a>
-                            <br>durasi: 3 bulan</p>       
+                            <br>durasi : 3 bulan</p>       
                     </div>
-                    <div style="display: flex; text-align: justify;">
-                        <p style="font-size: 13px">
+                    <div class="paragraf">
+                        <p>
                             Node.js adalah platform perangkat lunak yang dirancang oleh Ryan Dahl. Node.js adalah runtime untuk 
-                            lingkungan JavaScript di luar peramban web yang dibangun di atas mesin JavaScript V8.
-                            Node.js dapat dijalankan pada Windows, Mac OS X, dan Linux.
+                            lingkungan JavaScript Node.js adalah platform perangkat lunak yang dirancang oleh Ryan Dahl. Node.js adalah runtime untuk 
+                            lingkungan JavaScript Node.js adalah platform perangkat lunak yang dirancang oleh Ryan Dahl. Node.js adalah runtime untuk 
+                            lingkungan JavaScript 
                         </p>
                     </div>
                     <div class="icon">
                         <i class="fa-brands fa-google-play"></i>
-                        <i class="fa-brands fa-android"></i>
+                        <i class="fa fa-android"></i>
                         <i class="fa-brands fa-java"></i>
                     </div>
                     <div class="btn-group">
                         <div class="edit">
-                            <a href="#" class="btn-edit">Edit </a>
+                            <a href="#" class="btn-edit">edit </a>
                         </div>
                         <div class="delete">
-                            <a href="#" class="btn-post">Delete</a>
+                            <a href="#" class="btn-post">delete</a>
                         </div> 
                     </div>
                 </div >
